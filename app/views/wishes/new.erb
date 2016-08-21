@@ -1,0 +1,10 @@
+<h1>Hello world</h1>
+<%= form_for :wish, url: wishes_path do |f| %>
+  <p>
+    <%= f.label :content, 'Your wish' %><br>
+    <%= f.text_field :content %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
